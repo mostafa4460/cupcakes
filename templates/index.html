@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/cupcakes.css">
+    <title>Home Page</title>
+</head>
+<body>
+
+    <ul id="cupcakes"></ul>
+
+    <h1>Add a new cupcake!</h1>
+    <form id="add-cupcake-form">
+        <div>
+            <label for="flavor">Flavor</label>
+            <input id="flavor" type="text" placeholder="Flavor" required>
+        </div>
+
+        <div>
+            <label for="size">Size</label>
+            <input id="size" type="text" placeholder="Size" required>
+        </div>
+
+        <div>
+            <label for="rating">Rating</label>
+            <input id="rating" type="number" placeholder="Rating" min="0" max="10" step="0.1" required>
+        </div>
+
+        <div>
+            <label for="image-url">Image URL</label>
+            <input id="image" type="text" placeholder="Image URL" required>
+        </div>
+
+        <button>Submit</button>
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.min.js"
+        integrity="sha256-T/f7Sju1ZfNNfBh7skWn0idlCBcI3RwdLSS4/I7NQKQ=" crossorigin="anonymous"></script>
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+    <script src="static/cupcakes.js"></script>
+</body>
+</html>

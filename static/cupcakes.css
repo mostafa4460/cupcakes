@@ -1,0 +1,12 @@
+#cupcakes {
+    list-style: none;
+}
+
+.cupcake {
+    text-align: center;
+}
+
+.cupcake-img {
+    width: 200px;
+    height: 200px;
+}
